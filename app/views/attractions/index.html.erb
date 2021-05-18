@@ -1,7 +1,7 @@
 <h1>Attractions</h1>
 <ul>
 <% @attractions.each do |attraction| %>
-  <li><%= link_to link_to_attraction(attraction), attraction_path(attraction) %></li>
+  <li><%= link_to link_to_attraction(@user, attraction), attraction_path(attraction) %></li>
 <% end %>
 </ul>
 </br>
